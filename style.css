@@ -1,0 +1,534 @@
+body{
+  margin: 0px;
+}
+
+/*heading styles*/
+.heading1{
+    font-family: calibri light;
+    font-size: 3rem;
+    text-align: center;
+    margin:40px 0px;
+    font-size: 70px;
+    color: black;
+}
+
+.heading2{
+  font-family: calibri light;
+  font-size: 3rem;
+  text-align: center;
+  margin:40px 0px;
+  font-size: 50px;
+  color: gray;
+}
+
+.heading3{
+  font-family: calibri light;
+  text-align: center;
+  margin:40px 0px;
+  font-size: 20px;
+  color: gray;
+}
+
+.heading4{
+  font-family: calibri light;
+  text-align: center;
+  margin:40px 0px;
+  font-size: 30px;
+  color: gray;
+}
+
+/*logo*/
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* navigation bar */
+.navbar {
+        background-color: white;
+        overflow: hidden;
+        width: 700px;
+        margin: auto;
+      }
+
+.navbar a {
+        float: none;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Calibri light;
+      }
+
+/* Media query for Navigation bar */
+@media screen and (max-width: 600px) {
+  .navbar{
+     text-align: center;
+    width: 600px;
+    margin: auto;
+  }
+  .navbar a{
+   
+    font-size: 20px;
+  }
+
+  }
+
+/*----------------------------------index style-----------------------------------------------*/
+.section1{
+        background-color: #FEFFD1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+.img1{
+  width: 35%;
+  padding: 20px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.des {
+  width: 390px;
+  padding: 17px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  height: 150%;
+  margin-top: 25px;
+  background-color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.p1{
+  font-size: 16px;
+  font-family: calibri light;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h1{
+  font-size: 30px;
+  font-family: calibri light;
+  text-align: center;
+  color: rgb(98, 99, 92);
+}
+
+.img2{
+  width: 35%;
+  padding: 20px;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.yellow-line{
+  background-color:#FEFFD1  ;
+  width: 100%;
+  height: 50px;
+}
+
+.img1:hover,.img2:hover{
+  opacity: 0.75;
+}
+.des:hover{
+  box-shadow: 5px 10px 18px #888888;
+}
+
+/* Media query for section1*/
+@media screen and (max-width: 600px) {
+  .section1{
+    background-color: #FEFFD1;
+    display: initial;
+    width: 100%;  
+    height: 100%;
+  }
+
+  .img1{
+    padding: 20px;
+    width: 100%;
+  }
+  .des{
+    padding: 20px;
+    width: 100%;
+    height: 50vh;
+  }
+  .img2{
+    padding: 20px;
+    width: 100%;
+  }
+.yellow-line{
+  background-color: #ffffff;
+}
+  }
+
+
+/*-----------------------------------contact style---------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+.cont-img{
+  overflow: hidden;
+}
+.cont-img img{
+  width: 889px;
+  height: 589px;
+
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(74, 74, 74);
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #FEFFD1;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  font-family: calibri light;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.locatel{
+  background-color: #fff7e2;
+  width: 100%;
+  height: 40vh;
+  font-family: calibri;
+  font-size: 1.1em;
+}
+.locatel-cont{
+  display: flex;
+  justify-content: end;
+}
+.icon-locatel{
+  width: 8%;
+  opacity: 65%;
+}
+.locatel-head{
+  margin: 15px 0 15px 0 ;
+}
+.cont-head{
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.locatel-ul{
+  list-style: none;
+}
+.location, .tele{
+  width: 25%;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .location, .tele{
+    width: 50%;
+  }
+
+  .cont-img img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/*-------------------about style-------------------------------------------*/
+
+.des2 {
+  width: 1000px;
+  padding: 15px;
+  border: 3px solid white;
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.row-about{
+  display: flex;
+}
+.column-about{
+  padding: 20px;
+}
+.about{
+  width: 100%;
+  height: 82%;
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.styled-table thead tr {
+  background-color: #f5ea8b;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 16px 20px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: white;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #fce89a;
+}
+
+#qualification {
+  font-family: calibri light;
+  border-collapse: collapse;
+  width: 1000px;
+  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 10px 10px #888888;
+}
+
+#qualification td, #qualification th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+}
+
+#qualification tr:nth-child(even){background-color: #ffffff;}
+
+#qualification tr:hover {background-color: #ddd;}
+
+#qualification th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left ;
+  background-color: rgb(176, 174, 174);
+  color: white;
+  font-family: calibri light;
+  
+}
+
+
+/* Media query for About me */
+@media screen and (max-width: 600px) {
+  .des2{
+    width: 100%;
+  }
+  .styled-table{
+    width: 100%;
+  }
+  .styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+  #qualification{
+    width: 100%;
+  }
+  .row-about{
+    display: initial;
+  }
+}
+
+/* ------------------------------Gallery Style-------------------------------- */
+
+.container-gallery{
+  background-color: #feffd1;
+  width: 100%;
+  padding: 10px;
+}
+.gallery-cont{
+  margin: 0 5% 0 5%;
+}
+
+/* Cards style */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: white;
+  display: grid;
+  grid-template-rows: max-content  1fr;
+  padding: 5px;
+  border: 3px solid black;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+.card img {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.content{
+  display: none;
+  text-align: center;
+  font-family:Calibri;
+  font-weight: bold;
+}
+
+/* -------------------------Qualifications style------------------- */
+
+.div1{
+  background-color: #FEFFD1;
+}
+
+.div2 {
+  background-color: rgb(248, 245, 245);
+  width: 50%;
+  border: 10px solid  rgb(248, 245, 245);
+  padding: 94px;
+  margin: 40px;
+}
+
+.div2 ul {
+	margin: 1.5em; 
+  font-family: calibri light;
+  list-style-image: url(images/music-Custom.png);
+}
+
+.div2 ul li {
+	border-bottom: 0px solid #ccc;
+	padding: .2em 0 .2em .5em;
+	color: #666; 
+  font-family: arial light;
+}
+
+.div2 ul li:hover {
+	cursor: pointer;
+	background-color: #f2f2f2;
+	color: #000;
+}
+
+.floatRight{
+  float:right;
+  margin-left:20px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.white-line{
+  background-color:#fffff9  ;
+  width: 100%;
+  height: 50px;
+}
+
+/* Media query for Qualifications page*/
+@media screen and (max-width: 600px) {
+.div2{
+  width: 100%;
+  margin: 0;
+}
+.floatRight{
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+}
+}
+
+/*------------------------------Footer section----------------------------------*/
+.footer{
+  margin-top: 20px;
+}
+.footer-line{
+  width: 75%;
+  opacity: 75%;
+  color:rgb(98, 99, 92) ;
+}
+.footer-des{
+  font-family: calibri light;
+  text-align: center;
+  margin-bottom: 7.5px;
+}
+.social-media{
+  list-style: none;
+  justify-content: center;
+  margin-left: 43%;
+  margin-top: 0px;
+
+}
+.media-link{
+  display: inline;
+  float: none;
+  text-align: center;
+}
+.media-img{
+  width: 3%;
+  opacity: 65%;
+}
+
+/* Media query for footer section */
+@media screen and (max-width: 600px) {
+  .social-media{
+    margin-left: 35%;
+  }
+  .media-img{
+    width: 5%;
+  }
+
+  }
+        
+
+  
